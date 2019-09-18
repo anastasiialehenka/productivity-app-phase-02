@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Add Task</title>
+</head>
+<body>
+    <section class="add-task">
+        <div class="icons">
+            <div class="save-close-icons">
+                <button class="save-close-icons__item"><span class="icon-close"></span></button>
+                <button class="save-close-icons__item"><span class="icon-check"></span></button>
+            </div>
+        </div>
+        <h2 class="main__title">Add Task</h2>
+        <ul class="add-task__list">
+            <li class="add-task__item">
+                <h3 class="add-task__input-title">Title</h3>
+                <input class="add-task__input input" type="text" placeholder="Add title here">
+            </li>
+            <li class="add-task__item">
+                <h3 class="add-task__input-title">Description</h3>
+                <input class="input add-task__input" type="text" placeholder="Add description here">
+            </li>
+            <li class="add-task__item">
+                <h3 class="add-task__input-title">Category</h3>
+                <ul class="add-task__categories-list categories-list list">
+                    <li class="categories-list__item list__item">
+                        <label class="list__checkbox categories-list__checkbox categories-list__checkbox--work">
+                            <input type="radio" name="category">
+                            <span class="list__circle "></span>Work
+                        </label>
+                    </li>
+                    <li class="categories-list__item list__item">
+                        <label class="list__checkbox categories-list__checkbox categories-list__checkbox--education">
+                            <input type="radio" name="category">
+                            <span class="list__circle"></span>Education
+                        </label>
+                    </li>
+                    <li class="categories-list__item list__item">
+                        <label class="list__checkbox categories-list__checkbox categories-list__checkbox--hobby">
+                            <input type="radio" name="category">
+                            <span class="list__circle"></span>Hobby
+                        </label>
+                    </li>
+                    <li class="categories-list__item list__item">
+                        <label class="list__checkbox categories-list__checkbox categories-list__checkbox--sport">
+                            <input type="radio" name="category">
+                            <span class="list__circle"></span>Sport
+                        </label>
+                    </li>
+                    <li class="categories-list__item list__item">
+                        <label class="list__checkbox categories-list__checkbox categories-list__checkbox--other">
+                            <input type="radio" name="category">
+                            <span class="list__circle"></span>Other
+                        </label>
+                    </li>
+                </ul>
+            </li>
+            <li class="add-task__item">
+                <h3 class="add-task__input-title">Deadline</h3>
+                <p class="add-task__text">May 23, 2016</p>
+            </li>
+            <li class="add-task__item">
+                <h3 class="add-task__input-title">Estimation</h3>
+                 <ul class="add-task__estimation-list estimation-list">
+                     <li class="list__item estimation-list__item">
+                         <label class="list__checkbox estimation-list__checkbox">
+                             <input type="checkbox"><span class="estimation-list__icon"></span>
+                         </label>
+                     </li>
+                     <li class="list__item estimation-list__item">
+                         <label class="list__checkbox estimation-list__checkbox">
+                             <input type="checkbox"><span class="estimation-list__icon"></span>
+                         </label>
+                     </li>
+                     <li class="list__item estimation-list__item">
+                         <label class="list__checkbox estimation-list__checkbox">
+                             <input type="checkbox"><span class="estimation-list__icon"></span>
+                         </label>
+                     </li>
+                     <li class="list__item estimation-list__item">
+                         <label class="list__checkbox estimation-list__checkbox">
+                             <input type="checkbox"><span class="estimation-list__icon"></span>
+                         </label>
+                     </li>
+                     <li class="list__item estimation-list__item">
+                         <label class="list__checkbox estimation-list__checkbox">
+                             <input type="checkbox"><span class="estimation-list__icon"></span>
+                         </label>
+                     </li>
+                 </ul>
+            </li>
+            <li class="add-task__item">
+                <h3 class="add-task__input-title">Priority</h3>
+                <ul class="add-task__priority-list priority-list">
+                    <li class="priority-list__item list__item">
+                        <label class="list__checkbox priority-list__checkbox priority-list__checkbox--urgent">
+                            <input type="radio" name="priority">
+                            <span class="list__circle "></span>Urgent
+                        </label>
+                    </li>
+                    <li class="priority-list__item list__item">
+                        <label class="list__checkbox priority-list__checkbox priority-list__checkbox--high">
+                            <input type="radio" name="priority">
+                            <span class="list__circle"></span>High
+                        </label>
+                    </li>
+                    <li class="priority-list__item list__item">
+                        <label class="list__checkbox priority-list__checkbox priority-list__checkbox--middle">
+                            <input type="radio" name="priority">
+                            <span class="list__circle"></span>Middle
+                        </label>
+                    </li>
+                    <li class="priority-list__item list__item">
+                        <label class="list__checkbox priority-list__checkbox priority-list__checkbox--low">
+                            <input type="radio" name="priority">
+                            <span class="list__circle"></span>Low
+                        </label>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>

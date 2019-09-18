@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Task List</title>
+</head>
+
+<body>
+<header class="header">
+    <div class="header__container">
+        <img class="header__image" src="/images/logo.svg" alt="logo">
+        <nav class="header__main-nav main-nav">
+            <ul class="main-nav__list">
+                <li class="main-nav__item">
+                    <button class="main-nav__button"><span class="icon-list"></span></button>
+                </li>
+                <li class="main-nav__item">
+                    <button class="main-nav__button"><span class="icon-statistics"></span></button>
+                </li>
+                <li class="main-nav__item">
+                    <button class="main-nav__button main-nav__button--active"><span class="icon-settings"></span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main class="main">
+    <h1 class="main__title main__title--add">Daily Task List <span class="icon-add"></span></h1>
+    <img class="tomato-add-image" src="/images/tomato_settings.svg" alt="tomato icon">
+    <p class="main__invitation main__invitation--first-task">As you visited our site for a first time you can check and customize your default application settings</p>
+    <section class="buttons buttons--tasks">
+        <button class="button button--skip">Skip</button>
+        <button class="button button--settings">Go to Settings</button>
+    </section>
+</main>
+<script src="/bundle.js"></script>
+</body>
+</html>

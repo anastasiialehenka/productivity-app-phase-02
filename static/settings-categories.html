@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Settings</title>
+</head>
+
+<body>
+<header class="header">
+    <div class="header__container">
+        <img class="header__image" src="/images/logo.svg" alt="logo">
+        <nav class="header__main-nav main-nav">
+            <ul class="main-nav__list">
+                <li class="main-nav__item">
+                    <button class="main-nav__button"><span class="icon-list"></span></button>
+                </li>
+                <li class="main-nav__item">
+                    <button class="main-nav__button"><span class="icon-statistics"></span></button>
+                </li>
+                <li class="main-nav__item">
+                    <button class="main-nav__button main-nav__button--active"><span class="icon-settings"></span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main class="main">
+    <h1 class="main__title">Settings</h1>
+    <p class="main__subtitle main__subtitle--categories">Categories list overview</p>
+    <nav class="main__tabs-nav tabs-nav--positioned">
+        <ul class="tabs-nav__list tabs-nav__list">
+            <li class="tabs-nav__item"><button class="tabs-nav__button tabs-nav__button--active">Pomodoros</button></li>
+            <li class="tabs-nav__item"><button class="tabs-nav__button">Categories</button></li>
+        </ul>
+    </nav>
+    <ul class="categories">
+        <li class="categories__item categories__item--work"><span>Work</span></li>
+        <li class="categories__item categories__item--education"><span>Education</span></li>
+        <li class="categories__item categories__item--hobby"><span>Hobby</span></li>
+        <li class="categories__item categories__item--sport"><span>Sport</span></li>
+        <li class="categories__item categories__item--other"><span>Other</span></li>
+    </ul>
+    <button class="button button--tasks">Go to Tasks</button>
+</main>
+
+<!-- example of inserting static image -->
+<!-- <img src="/images/test.jpg" /> -->
+
+<script src="/bundle.js"></script>
+</body>
+
+</html>

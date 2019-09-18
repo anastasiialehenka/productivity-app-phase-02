@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Task List</title>
+</head>
+
+<body>
+<header class="header">
+    <div class="header__container">
+        <img class="header__image" src="/images/logo.svg" alt="logo">
+        <nav class="header__main-nav main-nav">
+            <ul class="main-nav__list">
+                <li class="main-nav__item">
+                    <button class="main-nav__button"><span class="icon-list"></span></button>
+                </li>
+                <li class="main-nav__item">
+                    <button class="main-nav__button"><span class="icon-statistics"></span></button>
+                </li>
+                <li class="main-nav__item">
+                    <button class="main-nav__button main-nav__button--active"><span class="icon-settings"></span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main class="main">
+    <h1 class="main__title">Daily Task List <span class="icon-add"></span></h1>
+    <nav class="main__tabs-nav tabs-nav tabs-nav--margin">
+        <ul class="tabs-nav__list tabs-nav__list--right">
+            <li class="tabs-nav__item">
+                <button class="tabs-nav__button tabs-nav__button--active">To Do</button>
+            </li>
+            <li class="tabs-nav__item">
+                <button class="tabs-nav__button">Done</button>
+            </li>
+        </ul>
+    </nav>
+    <p class="main__invitation main__invitation--all-done"><span>Excellent,</span> all daily tasks done!:)</p>
+    <section class="global-list global-list--expanded">
+        <button class="global-list__button">Global list <span class="icon-global-list-arrow-down"></span></button>
+        <nav class="tabs-nav tabs-nav--top">
+            <ul class="tabs-nav__list">
+                <li class="tabs-nav__item">
+                    <button class="tabs-nav__button tabs-nav__button--active">All</button>
+                </li>
+                <li class="tabs-nav__item">
+                    <button class="tabs-nav__button">Urgent</button>
+                </li>
+                <li class="tabs-nav__item">
+                    <button class="tabs-nav__button">High</button>
+                </li>
+                <li class="tabs-nav__item">
+                    <button class="tabs-nav__button">Middle</button>
+                </li>
+                <li class="tabs-nav__item">
+                    <button class="tabs-nav__button">Low</button>
+                </li>
+            </ul>
+        </nav>
+        <div class="tasks tasks--work">
+            <h2 class="tasks__section-title">Work</h2>
+            <ul class="tasks__list">
+                <li class="tasks__item tasks__item--work tasks__item--middle">
+                    <div class="tasks__date"><span class="number">23</span>may</div>
+                    <div class="tasks__text">
+                        <h2 class="tasks__title">Lorem ipsum sit amet</h2>
+                        <p class="tasks__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore</p>
+                    </div>
+                    <div class="tasks__icons">
+                        <span class="icon-arrows-up"></span>
+                        <span class="icon-edit"></span>
+                    </div>
+                    <div class="tasks__estimations">
+                        <span class="icon-tomato"></span>
+                        <span class="tasks__number">3</span>
+                        <span class="icon-timer"></span>
+                    </div>
+                </li>
+                <li class="tasks__item tasks__item--work tasks__item--middle">
+                    <div class="tasks__date"><span class="number">23</span>may</div>
+                    <div class="tasks__text">
+                        <h2 class="tasks__title">Lorem ipsum sit amet</h2>
+                        <p class="tasks__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore</p>
+                    </div>
+                    <div class="tasks__icons">
+                        <span class="icon-arrows-up"></span>
+                        <span class="icon-edit"></span>
+                    </div>
+                    <div class="tasks__estimations">
+                        <span class="icon-tomato"></span>
+                        <span class="tasks__number">3</span>
+                        <span class="icon-timer"></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+</main>
+<script src="/bundle.js"></script>
+</body>
+</html>

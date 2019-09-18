@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Settings</title>
+</head>
+
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="header__container">
+            <img class="header__image" src="/images/logo.svg" alt="logo">
+            <nav class="header__main-nav main-nav">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item">
+                        <button class="main-nav__button"><span class="icon-list"></span></button>
+                    </li>
+                    <li class="main-nav__item">
+                        <button class="main-nav__button"><span class="icon-statistics"></span></button>
+                    </li>
+                    <li class="main-nav__item">
+                        <button class="main-nav__button main-nav__button--active"><span class="icon-settings"></span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <h1 class="main__settings-title">Settings</h1>
+        <p class="main__subtitle">Pomodoros settings</p>
+        <nav class="main__tabs-nav tabs-nav tabs-nav--positioned">
+            <ul class="tabs-nav__list">
+                <li class="tabs-nav__item">
+                    <button class="tabs-nav__button tabs-nav__button--active">Pomodoros</button>
+                </li>
+                <li class="tabs-nav__item">
+                    <button class="tabs-nav__button">Categories</button>
+                </li>
+            </ul>
+        </nav>
+        <ul class="settings">
+            <li class="settings__item settings__item--margin settings__item--time">
+                <div class="settings__content">
+                    <div class="settings__first-row">
+                        <h3 class="settings__title">Work time</h3>
+                        <button class="settings__button settings__button--decrease" type="button"><span
+                                class="icon-minus"></span></button>
+                        <button class="settings__button settings__button--increase settings__button--disabled"
+                                type="button"><span
+                                class="icon-add"></span></button>
+                        <input class="input settings__input" type="number" value="25" disabled>
+                    </div>
+                    <p class="settings__desc">Please select a value between 15 and 25 <span>minutes</span></p>
+                </div>
+            </li>
+            <li class="settings__item settings__item--margin settings__item--iteration">
+                <div class="settings__circle"></div>
+                <div class="settings__content">
+                    <div class="settings__first-row">
+                        <h3 class="settings__title">Work iteration</h3>
+                        <button class="settings__button settings__button--decrease" type="button"><span
+                                class="icon-minus"></span></button>
+                        <button class="settings__button settings__button--increase settings__button--disabled"
+                                type="button"><span
+                                class="icon-add"></span></button>
+                        <input class=" input settings__input" type="number" value="5" disabled>
+                    </div>
+                    <p class="settings__desc">Please select a value between 2 and 5 <span>iterations</span></p>
+                </div>
+            </li>
+            <li class="settings__item settings__item--short-break">
+                <div class="settings__circle"></div>
+                <div class="settings__content">
+                    <div class="settings__first-row">
+                        <h3 class="settings__title">Short break</h3>
+                        <button class="settings__button settings__button--decrease" type="button"><span
+                                class="icon-minus"></span></button>
+                        <button class="settings__button settings__button--increase settings__button--disabled"
+                                type="button"><span
+                                class="icon-add"></span></button>
+                        <input class="input settings__input" type="number" value="5" disabled>
+                    </div>
+                    <p class="settings__desc">Please select a value between 3 and 5 <span>minutes</span></p>
+                </div>
+            </li>
+            <li class="settings__item settings__item--long-break">
+                <div class="settings__circle"></div>
+                <div class="settings__content">
+                    <div class="settings__first-row">
+                        <h3 class="settings__title">Long break</h3>
+                        <button class="settings__button settings__button--decrease" type="button"><span
+                                class="icon-minus"></span></button>
+                        <button class="settings__button settings__button--increase settings__button--disabled"
+                                type="button"><span
+                                class="icon-add"></span></button>
+                        <input class="input settings__input" type="number" value="30" disabled>
+                    </div>
+                    <p class="settings__desc">Please select a value between 15 and 30 <span>minutes</span></p>
+                </div>
+            </li>
+        </ul>
+        <div class="cycle">
+            <h2 class="cycle__title">Your cycle</h2>
+            <div class="cycle__container"></div>
+        </div>
+        <section class=" buttons buttons--settings">
+            <button class="button button--tasks">Go to Tasks</button>
+            <button class="button button--save">Save</button>
+        </section>
+    </main>
+    <script src="/bundle.js"></script>
+</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Task List</title>
+</head>
+
+<body>
+<header class="header">
+    <div class="header__container">
+        <img class="header__image" src="/images/logo.svg" alt="logo">
+        <nav class="header__main-nav main-nav">
+            <ul class="main-nav__list">
+                <li class="main-nav__item">
+                    <button class="main-nav__button"><span class="icon-list"></span></button>
+                </li>
+                <li class="main-nav__item">
+                    <button class="main-nav__button"><span class="icon-statistics"></span></button>
+                </li>
+                <li class="main-nav__item">
+                    <button class="main-nav__button main-nav__button--active"><span class="icon-settings"></span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main class="main">
+    <h1 class="main__title">Daily Task List <span class="icon-add"></span></h1>
+    <nav class="main__tabs-nav tabs-nav tabs-nav--margin">
+        <ul class="tabs-nav__list tabs-nav__list--right">
+            <li class="tabs-nav__item">
+                <button class="tabs-nav__button tabs-nav__button--active">To Do</button>
+            </li>
+            <li class="tabs-nav__item">
+                <button class="tabs-nav__button">Done</button>
+            </li>
+        </ul>
+    </nav>
+    <img class="tomato-add-image" src="/images/tomato-addv02.svg" alt="tomato icon">
+    <p class="main__invitation"><span>You don't have any tasks left.</span>Add new tasks to stay productive.</p>
+</main>
+<script src="/bundle.js"></script>
+</body>
+</html>
