@@ -1133,16 +1133,16 @@ input:checked + .list__circle:before {
 }
 .estimation-list__icon {
   display: block;
-  background-image: url('/images/empty-tomato.svg');
+  background-image: url('../images/empty-tomato.svg');
   width: 2.1rem;
   height: 2.1rem;
   cursor: pointer;
 }
 .estimation-list__icon:hover {
-  background-image: url('/images/fill-tomato.svg');
+  background-image: url('../images/fill-tomato.svg');
 }
 .estimation-list__checkbox input:checked + .estimation-list__icon {
-  background-image: url('/images/fill-tomato.svg');
+  background-image: url('../images/fill-tomato.svg');
 }
 /* example of using mixins */
 h1.test {
